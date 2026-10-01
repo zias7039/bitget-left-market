@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Bitget 왼쪽 코인 목록",
+  "version": "1.0.1",
+  "description": "비트겟 USDT 선물의 기존 종목 목록을 왼쪽에 자동 고정합니다. 외부 통신이나 주문 기능이 없습니다.",
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.bitget.com/asia/futures/usdt/*",
+        "https://www.bitget.com/futures/usdt/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Bitget 왼쪽 코인 목록",
+    "default_popup": "popup.html"
+  }
+}

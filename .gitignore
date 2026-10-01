@@ -1,0 +1,10 @@
+# Local files and private configuration
+.DS_Store
+Thumbs.db
+*.log
+*.zip
+.env
+.env.*
+*.pem
+*.key
+node_modules/

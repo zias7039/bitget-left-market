@@ -1,0 +1,1 @@
+const toggle=document.getElementById('enabled');chrome.storage.local.get({leftMarketEnabled:true},prefs=>{toggle.checked=prefs.leftMarketEnabled;});toggle.addEventListener('change',()=>chrome.storage.local.set({leftMarketEnabled:toggle.checked}));
